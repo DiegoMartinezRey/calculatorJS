@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js" async></script>
+    </head>
+    <body>
+        <div id="calculator">
+            <div class="panel">
+                <div class="screen borderStyle">
+                    <div id="opLabel" class="labelOperation"></div>
+                    <div id="numLabel" class="labelNum"></div>
+                </div>
+                <div class="panelButtons borderStyle">
+                    <div class="line">
+                        <div class="lineButtons borderStyle styleButton2 sB3" onclick="deleteScreen()"><h3>AC</h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="numInScreen(7)"><h3>7</h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="numInScreen(4)"><h3>4</h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="numInScreen(1)"><h3>1</h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="numInScreen(0)"><h3>0</h3></div>
+                    </div>
+                    <div class="line">
+                        <div class="lineButtons " onclick="test()"><h3></h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="numInScreen(8)"><h3>8</h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="numInScreen(5)"><h3>5</h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="numInScreen(2)"><h3>2</h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="numInScreen('00')"><h3>00</h3></div>
+                    </div>
+                    <div class="line">
+                        <div class="lineButtons borderStyle styleButton2" onclick="negativeNum()"><h3>+/-</h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="numInScreen(9)"><h3>9</h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="numInScreen(6)"><h3>6</h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="numInScreen(3)"><h3>3</h3></div>
+                        <div class="lineButtons borderStyle styleButton1" onclick="addDot('.')"><h3>.</h3></div>
+                    </div>
+                    <div class="line">
+                        <div class="lineButtons borderStyle styleButton2" onclick="divFunction()"><h3>/</h3></div>
+                        <div class="lineButtons borderStyle styleButton2" onclick="timesFunction()"><h3>x</h3></div>
+                        <div class="lineButtons borderStyle styleButton2" onclick="subFunction()"><h3>-</h3></div>
+                        <div class="lineButtons borderStyle styleButton2" onclick="addFunction()"><h3>+</h3></div>
+                        <div class="lineButtons borderStyle styleButton2" onclick="equal()"><h3>=</h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
